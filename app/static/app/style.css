@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+footer {
+    color: black;
+    height: 50px;
+    outline: 2px dashed white;
+    position: sticky;
+}
+
+.foot1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.foot2{
+    margin-left: 20px;
+}
+
+.foot2 p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.container {
+    background-color: black;
+    padding: 50px;
+}
+
+.title{
+    outline: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h3{
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.title:hover{
+    background-color: white;
+    opacity: 95%;
+    transition: all 0.8s ease;
+}
+
+.title:hover h3{
+    color: black;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.container1{
+    background-color: black;
+    margin-top: 100px;
+    padding: 40px;
+    outline: 2px solid white;
+    border-radius: 15px;
+
+}
+
+.container1 h1 {
+    font-size: 100px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 7px 7px 9px gray;
+}
+
+.container1 h2{
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 300px;
+    color: white;
+    opacity: 70%;
+    text-shadow: 5px 5px 7px gray;
+}
+
+.container .container1 h4{
+    color: white;
+    margin-left: 45%;
+    font-weight: 600;
+}
+
+
+.container1:hover{
+    background-color: white;
+    opacity: 95%;
+    transition: all 0.8s ease;
+}
+
+.container1:hover h1,.container1:hover h2,.container1:hover h4{
+    color: black;
+    transition: all 0.8s ease;
+}
+
+.hr{
+    height: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.container3{
+   height: 700px;
+   margin-top: 50px;
+}
+.step{
+    width: 30%;
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    outline: 2px solid white;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+.step h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 5px 5px 7px white;
+}
+
+.steps1{
+    width: 50%;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid white;
+    border-radius: 20px;
+}
+.steps2{
+    width: 50%;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 37%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid white;
+    border-radius: 20px;
+}
+
+.steps1 h3{
+    color: white;
+    text-shadow: 5px 5px 7px gray;
+    font-size: 30px;
+    font-weight: 700;
+}
+.steps2 h3{
+    color: white;
+    text-shadow: 5px 5px 7px gray;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.step:hover{
+    background-color: gray;
+    transition: all 0.8s ease;
+}
+.step:hover h2{
+    color: black;
+    transition: all 0.8s ease;
+}
+
+
+.steps1:hover,.steps2:hover{
+    background-color: white;
+    outline: 2px solid black;
+    transition: all 0.8s ease;
+}
+
+.steps1:hover h3 ,.steps2:hover h3{
+    color: black;
+    transition: all 0.8s ease;
+}
+
+.block1{
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 12%;
+    width: 48%;
+    outline: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.block2{
+    height: 300px;
+    width: 48%;
+    margin: 20px;
+    margin-left: 40%;
+    outline: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+
+.para{
+    font-size: 23px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.details{
+    width: 100%;
+}
+
+.maindetails{
+    width: 100%;
+}
+.maindetails .details1{
+    width: 48%;
+    height: 300px;
+    margin: 20px 0 10px 50px;
+    outline: 2px solid white;
+    border-radius: 20px;
+    
+}
+.details1 p li{
+    color: white;
+}
+
+.details1:hover,.details2:hover{
+    background-color: white;
+    color: black;
+    outline: 2px solid black;
+    opacity: 80%;
+}
+
+
+.maindetails .details2{
+    width: 48%;
+    height: 300px;
+    margin:20px 0 10px 48%;
+    outline: 2px solid white;
+    border-radius: 20px;
+
+}
+
+
+.details1 h1, .details2 h1{
+    color: white;
+    margin-left: 25%;
+    font-weight: 700;
+    text-shadow: 5px 5px 7px gray;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+}
+
+
+.details1 p, .details2 p{
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+
+
+.details1:hover h1,.details1:hover p,.details2:hover h1,.details2:hover p{
+    color: black;
+    transition: all 1s ease;
+}
+
+.alltext{
+    background-color: white ;
+    border-radius: 25px;
+    margin-bottom: 70px;
+}
+.alltext:hover{
+    background-color: black;
+    color: white;
+    outline: 2px solid white;
+    transition: 0.2s;
+}
+
+.alltext h1{
+    color: black;
+    font-weight: bold;
+    text-shadow: 5px 5px 7px gray;
+}
+
+
+.alltext:hover h1{
+    color: white;
+    transition: 0.8s;
+    text-shadow: 5px 5px 7px gray;
+}
+
+
+
+.janm{
+    height: 45px;
+
+}
+
+.janm1 {
+    padding: 10px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.janm1 {
+    font-size: medium;
+    font-weight: 700;
+}
+
+.janm2{
+    height: 55px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-right: 50px;
+    /* background-color: green; */
+
+}
+
+.janm2 a {
+    margin-left: 10px;
+    height: 45px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.janm3{
+    background-color: white;
+    width:115px;
+    margin-left: 10px;
+    height: 45px;
+    outline: 2px solid black;
+    border-radius: 15px;
+}
+
+.janm3 a{
+    text-decoration: none;
+    color: black;
+}
+
+.janm22 li:hover{
+    background-color: black;
+}
+.janm22 a:hover{
+    color: white;
+    font-size: 21px;
+    transition: all 0.2s ease-in-out;
+}
+
+.lar{
+    /* background-color: red;         */
+    height: 55px;
+}
+
+.lar li{
+    margin-top: 5px;
+    background-color: black;
+    margin-right: 6px;
+}
+.lar a{
+    color: white;
+    text-decoration: none;
+}
+
+.lar li:hover{
+    background: white;
+    outline: 2px solid black;
+    color: black;
+    transition: all 0.6s ease-in-out;
+}
+.lar a:hover{
+    color: black;
+}
+
+.bg{
+    /* background-color: red; */
+    height: 60px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg button{
+    background-color: black;
+    outline: 2px solid white;
+    color: white;
+}
+
+.bg button:hover{
+    background-color: white;
+    color: black;
+    outline: 2px solid black;
+    font-size: 18px;
+    transition: all 0.7s ease;
+}
+
+.bg1 {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:20% ;
+    margin-top: 0;
+    gap: 15px;
+}
+.bg2,.bg3{
+    margin:10px ;
+}
+
+.bg2 a:hover,.bg3 a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.login{
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-left: 18%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    outline: 2px solid white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 25px;
+}
+
+.login1{
+    background-color: black;
+    margin-right: 30%;
+    outline: 2px solid black;
+    padding: 20px;
+    border-radius: 25px;
+}
+.login2{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 25px;
+}
+.login2 h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.login3{
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.login3 button{
+    margin-left: 150px;
+    height: 40px;
+    width: 80px;
+    border-radius: 25px;
+    outline: 1px solid black;
+}
+
+.login3 button:hover{
+    background-color: black;
+    color: white;
+    outline: 2px solid black;
+}
+
+
+.register{
+    background-color: black;
+    height: 550px;
+    width: 70%;
+    margin-left: 16%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    outline: 3px solid white;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.register1{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 25%;
+    margin-left: 35%;
+    outline: 2px solid white;
+    border-radius: 25px;
+}
+.register1 h2{
+    color: black;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.register2 {
+    background-color:white;
+    padding: 30px;
+    outline: 2px solid white;
+    border-radius: 25px;
+}
+
+.register2 button{
+    margin-left: 45%;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.register2 button:hover{
+    background-color: black;
+    outline: 2px solid white;
+    color: white;
+}
+
+
+
+
+
+
+

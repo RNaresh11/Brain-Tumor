@@ -1,0 +1,63 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid janm">
+      <a class="navbar-brand janm1" href="#">JANM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse janm2" id="navbarNav">
+        <div class="janm22">
+        <ul class="navbar-nav">
+          <li class="nav-item janm3">
+            <a class=" active janm4" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item janm3">
+            <a class=" active janm4" aria-current="page" href="{% url 'home' %}">About</a>
+          </li>
+          <li class="nav-item janm3">
+            <a class=" active janm4" href="{% url 'detect' %}">Detection</a>
+          </li>
+          <li class="nav-item janm3">
+            <a class=" active janm4" href="{% url 'details' %}">Contact</a>
+          </li>
+        </ul>
+        </div>
+            {% comment %} <ul class="navbar-nav">
+              <li class="nav-item janm3">
+                <a class=" active janm4" href="{% url 'login' %}">Login</a>
+              </li>
+              <li class="nav-item janm3">
+                <a class=" active janm4" href="{% url 'register' %}">Regsiter</a>
+              </li>
+               <li class="nav-item janm3">
+                <a class=" active janm4" href="{% url 'logout' %}">Logout</a>
+              </li> 
+            </ul> {% endcomment %}
+
+            {% if user.is_authenticated %}
+              <div class="full">
+                <div class="half1">
+                  <form action="{% url 'logout' %}" method="post">
+                    {% csrf_token %}
+                    <div class="bg">
+                      <button class="btn" type="submit">Logout</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="half2" style="background-color:red;">
+                  {% else %}
+                  <div class="bg1">
+                    <div class="bg2">
+                      <a href="{% url 'register' %}" class="btn mx-2"  style="outline:2px solid black; border-radius:20px; margin-left:20px;">Register</a>
+                    </div>
+                    <div class="bg3">
+                      <a href="{% url 'login' %}" class="btn" style="outline:2px solid black; border-radius:20px;">Login</a>
+                    </div>
+                </div>
+                  {% endif %}
+                </div>
+            </div>
+          </div>
+        </ul>
+    </div>
+  </nav>
